@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.2.xsd http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+	<changeSet author="mateusz" id="3">
+		<createTable tableName="offers">
+			<column autoIncrement="true" name="id" type="SERIAL">
+			</column>
+			<column name="name" type="VARCHAR(80)">
+				<constraints nullable="false" />
+			</column>
+			<column name="email" type="VARCHAR(90)">
+				<constraints nullable="false" />
+			</column>
+			<column name="text" type="TEXT" />
+		</createTable>
+
+	</changeSet>
+
+</databaseChangeLog>
